@@ -52,11 +52,11 @@ set maxvar 30000
 *******************************************************************************
 *BEFORE USE THE FOLLOWING NEED TO BE UPDATED:
 *Country/Round/Abbreviations
-global Country CD	 
-global Round Round7
-global round 7
-global country CD
-global CCRX CDR7
+global Country NG	 
+global Round Round6
+global round 6
+global country NG
+global CCRX NGR6
 
 *Locals (Dont need to Update)
 local Country "$Country"
@@ -64,14 +64,14 @@ local Round "$Round"
 local CCRX "$CCRX"
 
 *Year of the Survey
-local SurveyYear 2018 
-local SYShort 18 
+local SurveyYear 2019 
+local SYShort 19 
 
 ******CSV FILE NAMES ****
 *HHQ CSV File name 
-global HHQcsv CDR7_Household_Questionnaire_v6
+global HHQcsv NGR6_Household_Questionnaire_v6
 *FQ CSV File name
-global FQcsv CDR7_Female_Questionnaire_v6
+global FQcsv NGR6_Female_Questionnaire_v6
 
 ***If the REs used a second version of the form, update these 
 *If they did not use a second version, DONT UPDATE 
@@ -83,32 +83,32 @@ global FQcsv CDR7_Female_Questionnaire_v6
 
 *******DO FILE NAMES******
 *HHQ_DataChecking File Name
-local HHQdofile CCRX_HHQ_Datachecking_v19.0_25Sep2018_AR
+local HHQdofile CCRX_HHQ_Datachecking
 
 *FRQ_DataChecking File Name
-local FRQdofile CCRX_FRQ_DataChecking_v27.0_15Jun2018_AR
+local FRQdofile CCRX_FRQ_DataChecking
 
 *HHQmember_DataChecking File Name
-local HHQmemberdofile CCRX_HHQmember_DataChecking_v7.0_30Oct2017_BL
+local HHQmemberdofile CCRX_HHQmember_DataChecking
 
 *WASH do file
-local WASHdofile CCRX_WASH_v19.0_24Apr2018
+local WASHdofile CCRX_WASH
 
 *CleaningByRE_Female date and initials
-local CleanFemaledate 05Oct2015
+local CleanFemaledate 
 
 *GPS check Spatial Data (requires to generate cleaned Listing.dta beforehand)
 local hhq_monit CCRX_HHQ_GeoMonitoring
 
 *CleaningByRE_HHQ date and intitials
-local CleanHHQdate 05Oct2015
+local CleanHHQdate 
 
 *Country Specific Clean Weight and initials
-local CountrySpecificdate v30.1_28Sep2018
+local CountrySpecificdate 
 
-*Country/Round specific module
+/*Country/Round specific module
 local module1do CCRX_CCP_v1_14Nov2017_SJ
-/*local module2do CCRX_InjectablesSC_v8_28Mar2018_BL
+*local module2do CCRX_InjectablesSC_v8_28Mar2018_BL
 local module3do CCRX_Abortion_v06_13Jul2018_sob
 local module4do CCRX-AbtModuleDataChecking-v06-13Jul2018-sob
 */
